@@ -1,10 +1,18 @@
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import url, include
-from django.contrib.auth import views as auth_views
-# from django.views.generic.base import RedirectView
+from tweets.views import feed
+from users.views import frontpage, signout, profile
+from users.views import following, followers, follow, stopfollow
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', frontpage, name='frontpage'),
+    path('feed/', feed, name='feed'),
+    path('signout/', signout, name='signout'),
+    path('<str:username>/', profile, name='profile'),
+    path('<str:username>/following', following, name='following'),
+    path('<str:username>/followers', followers, name='followers'),
+    path('<str:username>/follow', follow, name='follow'),
+    path('<str:username>/stopfollow', stopfollow, name='stopfollow'),
 ]

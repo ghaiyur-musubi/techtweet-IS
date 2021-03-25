@@ -10,7 +10,7 @@ class tweet_db(models.Model):
         db_table = 'tweets'
 
     tweet_user = models.CharField(
-        'Tweeter User Name', blank=False, null=False, max_length=20, db_index=True, default='Anonymous')
+        'Twitter User Name', blank=False, null=False, max_length=20, db_index=True, default='Anonymous')
 
     
 

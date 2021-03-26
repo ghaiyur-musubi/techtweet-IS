@@ -1,1 +1,82 @@
 {% extends "templates/base.html" %}
+
+{% block main %}
+<div class="row">
+    <!-- Feed -->
+    <div class="col-9">
+        <h3>Hello {{ user.username }}!</h3>
+
+        <hr>
+
+        <p>
+            <strong><a href="/{{ user.username }}/following">Following  </a></strong>{{ user.users.follows.count }} - <strong><a href="/{{ user.username }}/followers">Followers  </a></strong>{{ user.users.followed_by.count }}
+        </p>
+
+        {% ifnotequal request.user user %}
+            <hr>
+            {% if request.user.users in user.users.followed_by.all %}
+                <a href="/{{ user.username }}/stopfollow" class="btn btn-danger">Stop following</a>
+            {% else %}
+                <a href="/{{ user.username }}/follow" class="btn btn-success">Follow</a>
+            {% endif %}
+        {% endifnotequal %}
+
+        <hr>
+
+        {% if user.tweets.all %}
+            {% for tweet in user.tweets.all %}
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            @{{ user.username }}
+                        </h5>
+                        <p class="card-text">
+                            <strong>{{ tweet.created_at }}</strong>
+                            - {{ tweet.body }}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Show <span style="color:rgb(0, 158, 158);">T</span>echtweetis what is on your <b>🧠</b></p>
+        {% endif %}
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-3">
+        <h3>Add a Tweet</h3>
+
+        {% if form.errors %}
+            {% for field in form %}
+                {% for error in form.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+            {% for error in form.non_field_errors %}
+                <div class="alert alert-danger">
+                    <strong>{{ error|escape }}</strong>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form action="/{{ request.user.username }}/" method="post">
+            {% csrf_token %}
+
+            {% for field in form %}
+                <div class="form-group">
+                    {{ field }}
+                </div>
+            {% endfor %}
+
+            <input type="hidden" value="{{ request.path }}" name="redirect">
+            <br>
+            <input type="submit" value="Post tweet" class="btn btn-primary">
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock main %}

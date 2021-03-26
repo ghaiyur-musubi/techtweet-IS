@@ -16,6 +16,7 @@ Reference Resources :
         - [Source 2](https://stackoverflow.com/questions/53057621/django-pass-variable-into-template/53059318)
     - [Django Error handling](https://docs.djangoproject.com/en/3.1/howto/error-reporting/#:~:text=404%20errors,Your%20MIDDLEWARE%20setting%20includes%20django.)
     - [Django Templates](https://docs.djangoproject.com/en/3.1/ref/templates/language/)
+    - [Inbuilt users](https://docs.djangoproject.com/en/3.1/topics/auth/)
 
 - HTML 
 

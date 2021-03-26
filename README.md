@@ -1,6 +1,6 @@
 ## Twitter
 
-### Dev Log 
+### Dev Log
 
 Reference Resources : 
 
@@ -15,3 +15,4 @@ Reference Resources :
 
     - [HTML Elements](https://www.w3schools.com/html/default.asp)
     - [Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    - [Main HTML](https://www.w3schools.com/tags/tag_main.asp)

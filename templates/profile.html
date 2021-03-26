@@ -35,7 +35,9 @@
                         <p class="card-text">
                             <strong>{{ tweet.created_at }}</strong>
                             - {{ tweet.body }}
-                            - {{ tweet.image}}
+                            - <a href="{{ tweet.image.url }}" target="_blank">
+                                <img class="post-image" style="height: 100%; width: 100%;" src="{{ tweet.image.url }}">
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -70,14 +72,12 @@
             {% for field in form %}
                 <div class="form-group">
                     {{ field }}
-                    {{ tweet.image }}
                 </div>
             {% endfor %}
 
             <input type="hidden" value="{{ request.path }}" name="redirect">
             <br>
             <input type="submit" value="Post tweet" class="btn btn-primary">
-
         </form>
     </div>
 </div>

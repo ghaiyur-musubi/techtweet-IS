@@ -13,3 +13,14 @@ def feed(request):
     tweets = Tweet.objects.filter(user_id__in=userids[:25])
 
     return render(request, 'feed.html', {'tweets': tweets})
+
+
+@login_required
+def TweetDelete(request, tweet_id):
+  # Get tweet
+  tweet_to_delete = Tweet.objects.get(id=tweet_id)
+  
+  # Delete
+  tweet_to_delete.delete()
+
+  return render(request, 'feed.html', {'tweets': tweets})

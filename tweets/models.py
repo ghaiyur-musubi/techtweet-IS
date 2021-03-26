@@ -6,6 +6,7 @@ created_at - DateTimeField
 
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 
 # Create your models here.
@@ -14,8 +15,8 @@ class Tweet(models.Model):
                              related_name='tweets',
                              on_delete=models.DO_NOTHING)
     body = models.CharField(max_length=255)
+    image = CloudinaryField('image', blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
-
     # Desc Sort the tweets
     class Meta:
         ordering = ('-created_at', )

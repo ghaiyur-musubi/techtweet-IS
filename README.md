@@ -19,6 +19,8 @@ Reference Resources :
     - [Inbuilt users](https://docs.djangoproject.com/en/3.1/topics/auth/)
     - [Sample signup](https://simpleisbetterthancomplex.com/tutorial/2017/02/18/how-to-create-user-sign-up-view.html)
     - [Cloudinary and Django](https://cloudinary.com/documentation/django_integration)
+    - [Cloudinary Tag fix](https://stackoverflow.com/questions/40686201/django-1-10-1-my-templatetag-is-not-a-registered-tag-library-must-be-one-of/57074067)
+    - [Cloudinary Model Structure](https://cloudinary.com/documentation/django_image_and_video_upload)
 
 - HTML 
 

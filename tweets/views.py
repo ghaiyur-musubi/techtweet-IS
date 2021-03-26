@@ -6,9 +6,9 @@ from .models import Tweet
 @login_required
 def feed(request):
     userids = []
-    # gives us the whole user profile
+    # Selects the user profile
     for user in request.user.users.follows.all():
-        # collecting the IDs of user's the user is following
+        # collecting the IDs of user's following
         userids.append(user.id)
     tweets = Tweet.objects.filter(user_id__in=userids[:25])
 

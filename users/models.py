@@ -13,4 +13,4 @@ class UserProfile(models.Model):
         return self.user.username
 
 
-User.djeeterprofile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
+User.users = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])

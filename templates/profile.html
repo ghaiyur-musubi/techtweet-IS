@@ -1,5 +1,5 @@
 {% extends "templates/base.html" %}
-
+{% load cloudinary %}
 {% block main %}
 <div class="row">
     <!-- Feed -->
@@ -30,6 +30,8 @@
                         <h5 class="card-title">
                             @{{ user.username }}
                         </h5>
+                        <input type="hidden" value="{{ request.path }}" name="redirect">
+                        <a href='/TweetDelete/{{ tweet.id }}/'>Delete</a>
                         <p class="card-text">
                             <strong>{{ tweet.created_at }}</strong>
                             - {{ tweet.body }}
@@ -68,6 +70,7 @@
             {% for field in form %}
                 <div class="form-group">
                     {{ field }}
+                    {{tweet.image}}
                 </div>
             {% endfor %}
 
@@ -76,7 +79,6 @@
             <input type="submit" value="Post tweet" class="btn btn-primary">
 
         </form>
-
     </div>
 </div>
 

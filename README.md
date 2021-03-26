@@ -21,6 +21,7 @@ Reference Resources :
     - [Cloudinary and Django](https://cloudinary.com/documentation/django_integration)
     - [Cloudinary Tag fix](https://stackoverflow.com/questions/40686201/django-1-10-1-my-templatetag-is-not-a-registered-tag-library-must-be-one-of/57074067)
     - [Cloudinary Model Structure](https://cloudinary.com/documentation/django_image_and_video_upload)
+    - [Cloudinary Image Upload](https://kodnito.com/posts/upload-images-cloudinary-django-application/)
 
 - HTML 
 

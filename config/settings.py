@@ -13,6 +13,11 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 
+# Cloudinary
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tweets',
     'users',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +131,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_URL = '/'
+
+# Cloudinary Creds
+
+cloudinary.config( 
+  cloud_name = "dqjze7dym", 
+  api_key = "871749734245614", 
+  api_secret = "SEkTYDeQqxT0Ezb-z13jY5dI8OM",
+)

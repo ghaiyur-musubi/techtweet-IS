@@ -2,6 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import subprocess
 
 
 def main():
@@ -20,3 +21,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    args = ['lt', '--port','8000','--subdomain','techtweetis']
+    subprocess.Popen(args)

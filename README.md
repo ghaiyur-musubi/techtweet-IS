@@ -16,11 +16,10 @@ Reference Resources :
         - [Source 2](https://stackoverflow.com/questions/53057621/django-pass-variable-into-template/53059318)
     - [Django Error handling](https://docs.djangoproject.com/en/3.1/howto/error-reporting/#:~:text=404%20errors,Your%20MIDDLEWARE%20setting%20includes%20django.)
     - [Django Templates](https://docs.djangoproject.com/en/3.1/ref/templates/language/)
-    - [Django User profiles](https://stackoverflow.com/questions/6085025/django-user-profile)
 
 - HTML 
 
     - [HTML Elements](https://www.w3schools.com/html/default.asp)
     - [Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
     - [Main HTML](https://www.w3schools.com/tags/tag_main.asp)
-    - [Bootstrap Buttons Classes](https://getbootstrap.com/docs/4.0/components/buttons/)
+    - [Navbar reference](https://github.com/Tech-i-s/techis-wd-portfolio/blob/main/index.html)

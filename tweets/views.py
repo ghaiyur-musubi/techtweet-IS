@@ -28,15 +28,3 @@ def TweetDelete(request, tweet_id):
     tweet_to_delete.delete()
 
     return HttpResponseRedirect('/'+request.user.username+'/')
-
-@login_required
-def image_upload(request):
-    user = request.user
-    # instance = get_object_or_404(user.username, user=user.username)
-    if request.method == "POST":
-        form = TweetForm()
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect('/'+request.user.username+'/')
-    form = TweetForm()
-    return HttpResponseRedirect('/'+request.user.username+'/')

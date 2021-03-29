@@ -12,9 +12,15 @@ A simple rendition of the twitter stack, with the ability to create tweets and a
 
 #### Users 😊
 
-![img](https://user-images.githubusercontent.com/67789350/112815145-a22c2780-909d-11eb-9856-2063ca7054a5.gif)
+![feed](https://user-images.githubusercontent.com/67789350/112815145-a22c2780-909d-11eb-9856-2063ca7054a5.gif)
 
-Users can see other peoples tweets and also like their profiles
+Users can see other people's tweets and also follow them
+
+#### profiles
+
+![profiles](https://user-images.githubusercontent.com/67789350/112816334-e9ff7e80-909e-11eb-874e-28549975b579.gif)
+
+Users have their personal profiles
 
 #### Local Set up ⚙️
 

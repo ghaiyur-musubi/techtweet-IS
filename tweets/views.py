@@ -11,10 +11,10 @@ from django.shortcuts import get_object_or_404
 def feed(request):
     userids = []
     # Selects the user profile
-    for user in request.user.users.follows.all():
+    for user in request.user.users.all():
         # collecting the IDs of user's following
         userids.append(user.id)
-    tweets = Tweet.objects.filter(user_id__in=userids[:25])
+    tweets = Tweet.objects.filter(user_id__in=userids)
 
     return render(request, 'feed.html', {'tweets': tweets})
 

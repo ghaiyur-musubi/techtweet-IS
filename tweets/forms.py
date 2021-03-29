@@ -2,7 +2,8 @@ from django import forms
 from django.utils.html import strip_tags
 from .models import Tweet
 import cloudinary
-from cloudinary.models import CloudinaryField
+from cloudinary.forms import CloudinaryFileField
+
 
 
 class TweetForm(forms.ModelForm):
@@ -12,7 +13,8 @@ class TweetForm(forms.ModelForm):
                                     'placeholder': 'What is on your mind ? ',
                                     'class': 'form-control'
                                 }))
-    image = forms.ImageField(required= False)
+    image = CloudinaryFileField(required = False)
     class Meta:
         model = Tweet
         exclude = ('user', )
+        fields= '__all__'

@@ -25,6 +25,7 @@ Reference Resources :
     - [Cloudinary Model Structure](https://cloudinary.com/documentation/django_image_and_video_upload)
     - [Cloudinary Image Upload](https://kodnito.com/posts/upload-images-cloudinary-django-application/)
     - [Django Image forms](https://www.geeksforgeeks.org/imagefield-django-forms/)
+    - [Cloudinary Image Forms](https://jszczerbinski.medium.com/django-web-app-and-images-cloudinary-straightforward-study-ae8b5bb03e37)
 
 - HTML 
 

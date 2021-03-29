@@ -12,7 +12,7 @@ A simple rendition of the twitter stack, with the ability to create tweets and a
 
 #### Users 😊
 
-![img](https://user-images.githubusercontent.com/67789350/112812928-482a6280-909b-11eb-812f-33ab177d49e7.mov)
+![img](https://user-images.githubusercontent.com/67789350/112815145-a22c2780-909d-11eb-9856-2063ca7054a5.gif)
 
 Users can see other peoples tweets and also like their profiles
 

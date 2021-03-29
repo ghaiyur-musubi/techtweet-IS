@@ -5,6 +5,7 @@ from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, HttpRes
 from .forms import TweetForm
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 
 
 
@@ -33,3 +34,19 @@ def TweetDelete(request, tweet_id):
     tweet_to_delete.delete()
 
     return HttpResponseRedirect('/'+request.user.username+'/')
+
+@login_required
+def like(request, username):
+    user = User.objects.get(username=username)
+    request.user.users.follows.add(user.users)
+
+    return redirect('/' + user.username + '/')
+
+
+@login_required
+def unlike(request, username):
+    user = User.objects.get(username=username)
+    # watch out, this should be .remove() instead of .delete()
+    request.user.users.follows.remove(user.users)
+
+    return redirect('/' + user.username + '/')

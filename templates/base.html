@@ -34,13 +34,10 @@
                   <ul class="navbar-nav mr-auto ms-auto mb-2">
                       {% if request.user.is_authenticated %}
                       <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/">Profile</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="/feed">Feed</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/{{user.username}}">Profile</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="/signout">Sign out</a>

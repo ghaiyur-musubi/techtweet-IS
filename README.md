@@ -12,6 +12,7 @@ Reference Resources :
     - [Django Field Setup](https://docs.djangoproject.com/en/3.1/ref/models/fields/)
     - [Decorators in python](https://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python)
     - [Signup Example](https://github.com/sibtc/simple-signup/tree/master/basic-example/mysite)
+    - [Django ManytoMany](https://docs.djangoproject.com/en/3.1/topics/db/examples/many_to_many/)
     - [Django Forms](https://docs.djangoproject.com/en/3.1/topics/forms/)
     - [Django For tags](https://www.geeksforgeeks.org/for-loop-django-template-tags/)
     - [Django variables in templates](https://www.youtube.com/watch?v=wkTE2QvzSmc&ab_channel=CodingWithMitch)

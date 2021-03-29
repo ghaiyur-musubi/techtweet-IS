@@ -29,6 +29,7 @@ Reference Resources :
     - [Cloudinary Image tutorial](https://www.youtube.com/watch?v=1T6G7Znrbfg&ab_channel=MajinDev)
     - [Cloudinary Upload Documentation](https://github.com/cloudinary/pycloudinary#uploading-images)
     - [Official Sample](https://github.com/cloudinary/cloudinary-django-sample)
+    - [Cloudinary File upload](https://alphacoder.xyz/image-upload-with-django-and-cloudinary/)
 
 - HTML 
 

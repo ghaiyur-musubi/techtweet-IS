@@ -16,7 +16,7 @@ A simple rendition of the twitter stack, with the ability to create tweets and a
 
 Users can see other people's tweets and also follow them
 
-#### profiles
+#### Profiles 🤝‍
 
 ![profiles](https://user-images.githubusercontent.com/67789350/112816334-e9ff7e80-909e-11eb-874e-28549975b579.gif)
 

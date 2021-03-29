@@ -13,7 +13,7 @@ class SignupForm(UserCreationForm):
                                  widget=forms.widgets.TextInput(
                                     attrs={'placeholder': 'First Name',
                                            'class': 'form-control'}))
-    last_name = forms.CharField(required=True,
+    last_name = forms.CharField(required=False,
                                 widget=forms.widgets.TextInput(
                                     attrs={'placeholder': 'Last Name',
                                            'class': 'form-control'}))

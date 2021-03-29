@@ -1,0 +1,27 @@
+
+{% extends "templates/base.html" %}
+
+{% block main %}
+
+<div class="row">
+    <div class="col-13">
+        <h3>Welcome to your Feed {{ user.username }}!</h3>
+
+        {% for tweet in tweets %}
+            <div class="card" style="margin-bottom: 20px;">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/{{ tweet.user.username }}/">
+                        @{{ tweet.user.username }}</a>
+                    </h5>
+                    <p class="card-text">
+                        <strong>{{ tweet.created_at }}</strong> -
+                        {{ tweet.body }}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock main %}

@@ -14,7 +14,8 @@ class TweetForm(forms.ModelForm):
                                     'class': 'form-control'
                                 }))
     image = CloudinaryFileField(required = False)
+    
     class Meta:
-        model = Tweet
+        model = Tweet     #Sending Details to body and image 
         exclude = ('user', )
-        fields= '__all__'
+        fields= ('body','image',)

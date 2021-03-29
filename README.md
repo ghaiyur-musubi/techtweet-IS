@@ -26,6 +26,9 @@ Reference Resources :
     - [Cloudinary Image Upload](https://kodnito.com/posts/upload-images-cloudinary-django-application/)
     - [Django Image forms](https://www.geeksforgeeks.org/imagefield-django-forms/)
     - [Cloudinary Image Forms](https://jszczerbinski.medium.com/django-web-app-and-images-cloudinary-straightforward-study-ae8b5bb03e37)
+    - [Cloudinary Image tutorial](https://www.youtube.com/watch?v=1T6G7Znrbfg&ab_channel=MajinDev)
+    - [Cloudinary Upload Documentation](https://github.com/cloudinary/pycloudinary#uploading-images)
+    - [Official Sample](https://github.com/cloudinary/cloudinary-django-sample)
 
 - HTML 
 

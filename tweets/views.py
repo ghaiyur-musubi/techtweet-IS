@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import Tweet
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
+from .forms import TweetForm
+from django.shortcuts import get_object_or_404
 
 
 
@@ -25,4 +27,16 @@ def TweetDelete(request, tweet_id):
     # Delete
     tweet_to_delete.delete()
 
+    return HttpResponseRedirect('/'+request.user.username+'/')
+
+@login_required
+def image_upload(request):
+    user = request.user
+    # instance = get_object_or_404(user.username, user=user.username)
+    if request.method == "POST":
+        form = TweetForm()
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/'+request.user.username+'/')
+    form = TweetForm()
     return HttpResponseRedirect('/'+request.user.username+'/')

@@ -16,6 +16,12 @@ A simple rendition of the twitter stack, with the ability to create tweets and a
 
 Users can see other peoples tweets and also like their profiles
 
+#### Local Set up ⚙️
+
+1. Clone this repo
+2. cd into the directory 
+3. `python3 manage.py runserver`
+
 #### Reference Resources : 
 
 - Django

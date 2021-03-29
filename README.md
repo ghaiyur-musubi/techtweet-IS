@@ -1,6 +1,8 @@
 ## Twitter
 
-### Dev Log
+### Introduction 
+
+
 
 Reference Resources : 
 
@@ -21,6 +23,12 @@ Reference Resources :
     - [Cloudinary and Django](https://cloudinary.com/documentation/django_integration)
     - [Cloudinary Tag fix](https://stackoverflow.com/questions/40686201/django-1-10-1-my-templatetag-is-not-a-registered-tag-library-must-be-one-of/57074067)
     - [Cloudinary Model Structure](https://cloudinary.com/documentation/django_image_and_video_upload)
+    - [Cloudinary Image Upload](https://kodnito.com/posts/upload-images-cloudinary-django-application/)
+    - [Django Image forms](https://www.geeksforgeeks.org/imagefield-django-forms/)
+    - [Cloudinary Image Forms](https://jszczerbinski.medium.com/django-web-app-and-images-cloudinary-straightforward-study-ae8b5bb03e37)
+    - [Cloudinary Image tutorial](https://www.youtube.com/watch?v=1T6G7Znrbfg&ab_channel=MajinDev)
+    - [Cloudinary Upload Documentation](https://github.com/cloudinary/pycloudinary#uploading-images)
+    - [Official Sample](https://github.com/cloudinary/cloudinary-django-sample)
 
 - HTML 
 

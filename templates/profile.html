@@ -1,5 +1,4 @@
 {% extends "templates/base.html" %}
-{% load cloudinary %}
 {% block main %}
 <div class="row">
     <!-- Feed -->
@@ -35,7 +34,11 @@
                         <p class="card-text">
                             <strong>{{ tweet.created_at }}</strong>
                             - {{ tweet.body }}
-                            - {{ tweet.image}}
+                            {% if tweet.image is not Null %}
+                            - <a href="{{ tweet.image.url }}" target="_blank">   <!---Add Image present checker -->
+                                <img class="get-image" style="height: 100%; width: 100%;" src="{{ tweet.image.url }}">
+                            {% endif %}
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -44,6 +47,8 @@
             <p>Show <span style="color:rgb(0, 158, 158);">T</span>echtweetis what is on your <b>🧠</b></p>
         {% endif %}
     </div>
+
+    <hr>
 
     <!-- Sidebar -->
     <div class="col-3">
@@ -64,20 +69,20 @@
             {% endfor %}
         {% endif %}
 
-        <form action="/{{ request.user.username }}/" method="post">
+        <form action="/{{ request.user.username }}/" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-
+            {% load cloudinary %}
+            {% cloudinary_includes %}
+            {% cloudinary_js_config %}
             {% for field in form %}
                 <div class="form-group">
                     {{ field }}
-                    {{tweet.image}}
                 </div>
             {% endfor %}
 
             <input type="hidden" value="{{ request.path }}" name="redirect">
             <br>
             <input type="submit" value="Post tweet" class="btn btn-primary">
-
         </form>
     </div>
 </div>

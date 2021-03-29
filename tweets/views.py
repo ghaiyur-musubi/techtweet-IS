@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import Tweet
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
+from .forms import TweetForm
+from django.shortcuts import get_object_or_404
 
 
 

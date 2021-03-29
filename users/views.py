@@ -51,7 +51,7 @@ def profile(request, username):
         user = User.objects.get(username=username)
 
         if request.method == 'POST':
-            form = TweetForm(data=request.POST)
+            form = TweetForm(request.POST,request.FILES)
 
             if form.is_valid():
                 tweet = form.save(commit=False)

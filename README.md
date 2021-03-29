@@ -1,10 +1,22 @@
-## Twitter
+# Twitter
 
 ### Introduction 
 
+A simple rendition of the twitter stack, with the ability to create tweets and also follow other users
+
+#### Signup ⛳
+
+![image](https://user-images.githubusercontent.com/67789350/112812441-c76b6680-909a-11eb-92eb-431fee906aaf.png)
+
+- Users can sign up and log in 
+
+#### Users 😊
 
 
-Reference Resources : 
+
+
+
+#### Reference Resources : 
 
 - Django
     - [Login and Signup](https://www.ordinarycoders.com/blog/article/django-user-register-login-logout)

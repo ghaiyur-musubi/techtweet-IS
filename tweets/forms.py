@@ -9,9 +9,10 @@ class TweetForm(forms.ModelForm):
     body = forms.CharField(required=True,
                             widget=forms.widgets.Textarea(
                                 attrs={
-                                    'placeholder': 'Tweet',
+                                    'placeholder': 'What is on your mind ? ',
                                     'class': 'form-control'
                                 }))
+    image = forms.ImageField(required= False)
     class Meta:
         model = Tweet
         exclude = ('user', )

@@ -29,6 +29,10 @@ Reference Resources :
     - [Cloudinary Image tutorial](https://www.youtube.com/watch?v=1T6G7Znrbfg&ab_channel=MajinDev)
     - [Cloudinary Upload Documentation](https://github.com/cloudinary/pycloudinary#uploading-images)
     - [Official Sample](https://github.com/cloudinary/cloudinary-django-sample)
+    - [Cloudinary File upload](https://alphacoder.xyz/image-upload-with-django-and-cloudinary/)
+    - [Iterate through users](https://stackoverflow.com/questions/25251281/attributeerror-when-looping-through-django-user-objects)
+    - [Django User Objects](https://docs.djangoproject.com/en/3.1/ref/contrib/auth/)
+    - [Get All users](https://stackoverflow.com/questions/23139657/django-get-all-users#:~:text=Django%20get%20user%20it's%20also,create%20user%20%2Cchange%20password%20%2Cetc&text=will%20return%20values%20of%20all,objects.)
 
 - HTML 
 

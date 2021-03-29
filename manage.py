@@ -21,5 +21,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    args = ['lt', '--port','8000','--subdomain','techtweetis']
-    subprocess.Popen(args)
+    # args = ['lt', '--port','8000','--subdomain','techtweetis']
+    # subprocess.Popen(args)

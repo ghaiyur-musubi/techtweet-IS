@@ -29,7 +29,7 @@ def frontpage(request):
 
                 if signinform.is_valid():
                     login(request, signinform.get_user())
-                    return redirect('/')
+                    return redirect('/feed')
 
         else:
             signupform = SignupForm()

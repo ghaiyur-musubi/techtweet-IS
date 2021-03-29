@@ -4,6 +4,8 @@ from .models import Tweet
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
 from .forms import TweetForm
 from django.shortcuts import get_object_or_404
+from django.contrib.auth import get_user_model
+
 
 
 
@@ -11,10 +13,13 @@ from django.shortcuts import get_object_or_404
 def feed(request):
     userids = []
     # Selects the user profile
-    for user in request.user.users.follows.all():
+    all_users = get_user_model()
+    for user in all_users.objects.all():
         # collecting the IDs of user's following
+        print('Found User ',user)
         userids.append(user.id)
-    tweets = Tweet.objects.filter(user_id__in=userids[:25])
+        print("These are all the user ID Found",userids)
+    tweets = Tweet.objects.filter(user_id__in=userids)
 
     return render(request, 'feed.html', {'tweets': tweets})
 

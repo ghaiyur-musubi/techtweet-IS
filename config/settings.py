@@ -133,7 +133,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_URL = '/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-# Cloudinary Creds
+# Cloudinary Credentials 
 
 cloudinary.config( 
   cloud_name = "dqjze7dym", 

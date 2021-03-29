@@ -1,4 +1,4 @@
-# Twitter
+# Techtweetis
 
 ### Introduction 
 
@@ -12,9 +12,9 @@ A simple rendition of the twitter stack, with the ability to create tweets and a
 
 #### Users 😊
 
+![img](https://user-images.githubusercontent.com/67789350/112812928-482a6280-909b-11eb-812f-33ab177d49e7.mov)
 
-
-
+Users can see other peoples tweets and also like their profiles
 
 #### Reference Resources : 
 

@@ -32,6 +32,9 @@
                   <!-- ms-auto, for pushing items to the left -->
                   <!-- mb-2, for a margin bottom for 2 levels -->
                   <ul class="navbar-nav mr-auto ms-auto mb-2">
+                    <li class="nav-item">
+                      <?php phpinfo(); ?>
+                    </li>
                       {% if request.user.is_authenticated %}
                       <li class="nav-item">
                         <a class="nav-link" href="/">Profile</a>

@@ -5,7 +5,7 @@
     <div>
         <h1>{{ title }}</h1>
         <ul>
-            {% for djeeter in djeeterprofiles  %}
+            {% for config in users  %}
                 <li><a href="/{{ config.user.username }}/">
                     @{{ config.user.username }}
                 </a></li>

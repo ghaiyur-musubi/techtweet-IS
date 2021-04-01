@@ -1,8 +1,37 @@
 ## Twitter
 
-### Introduction 
+### Introduction 🐦
 
 Welcome to a Django powered twitter clone, it is built with HTML, Django backed python
+
+Visit the [Live Deployement!](https://techtweetis.herokuapp.com/)
+
+## Functionalities so far !
+
+### Signup
+
+Users can register and signin and all the tweets are connected to their account 
+
+![image](https://user-images.githubusercontent.com/67789350/113252356-61245500-92e1-11eb-887c-081f07dd940c.png)
+
+### Tweet 🔥
+
+Users can post tweets with images attached to them 
+
+![profile](https://user-images.githubusercontent.com/67789350/112816334-e9ff7e80-909e-11eb-874e-28549975b579.gif)
+
+### Feed 🍼
+
+Users can see other users tweets in their feed 
+
+![feed](https://user-images.githubusercontent.com/67789350/112815145-a22c2780-909d-11eb-9856-2063ca7054a5.gif)
+
+### Local Setup ⚙️
+
+- Clone this repo 
+- cd into the directory
+- comment out the heroku env files 
+- `python3 manage.py runserver`
 
 
 Reference Resources : 

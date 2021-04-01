@@ -32,7 +32,7 @@ SECRET_KEY = '_onas655vdi-(i9z7sfh1%=viuh*$4=8kktux0=6pz@o73a_&p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','.herokuapp.com']
 
 
 # Application definition
@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -84,10 +85,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+# Heroku Postgres Creds
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfmr03pugpe0ni',
+        'USER': 'oxahjdksrnfeid',
+        'HOST': 'ec2-54-235-108-217.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'PASSWORD': 'b51e314b04340067103397bb3cc8553ddcd4ed0d682e80962cd713ad54a5ecee',
     }
 }
 

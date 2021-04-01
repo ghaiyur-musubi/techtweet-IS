@@ -1,34 +1,10 @@
-# Techtweetis
+## Twitter
 
 ### Introduction 
 
-A simple rendition of the twitter stack, with the ability to create tweets and also follow other users
 
-#### Signup ⛳
 
-![image](https://user-images.githubusercontent.com/67789350/112812441-c76b6680-909a-11eb-92eb-431fee906aaf.png)
-
-- Users can sign up and log in 
-
-#### Users 😊
-
-![feed](https://user-images.githubusercontent.com/67789350/112815145-a22c2780-909d-11eb-9856-2063ca7054a5.gif)
-
-Users can see other people's tweets and also follow them
-
-#### Profiles 🤝‍
-
-![profiles](https://user-images.githubusercontent.com/67789350/112816334-e9ff7e80-909e-11eb-874e-28549975b579.gif)
-
-Users have their personal profiles
-
-#### Local Set up ⚙️
-
-1. Clone this repo
-2. cd into the directory 
-3. `python3 manage.py runserver`
-
-#### Reference Resources : 
+Reference Resources : 
 
 - Django
     - [Login and Signup](https://www.ordinarycoders.com/blog/article/django-user-register-login-logout)
@@ -65,3 +41,7 @@ Users have their personal profiles
     - [Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
     - [Main HTML](https://www.w3schools.com/tags/tag_main.asp)
     - [Navbar reference](https://github.com/Tech-i-s/techis-wd-portfolio/blob/main/index.html)
+
+- Heroku 
+
+    - [Heroku Deployement Tutorial](https://www.youtube.com/watch?v=GMbVzl_aLxM&ab_channel=PrettyPrinted)

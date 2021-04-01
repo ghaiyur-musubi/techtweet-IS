@@ -14,7 +14,7 @@
 
 <body id='body'>
   <script>
-    var colors = ["red", "blue", "green","white"];
+    var colors = ["gray","white"];
     var colorIndex = 0;
     function changeColor() {
         var col = document.getElementById("body");
@@ -46,7 +46,7 @@
                   <!-- mb-2, for a margin bottom for 2 levels -->
                   <ul class="navbar-nav ms-auto mb-2">
                     <li class="nav-item">
-                      <a class="nav-link" onclick="changeColor()" href="#">Boogie</a>
+                      <a class="nav-link" onclick="changeColor()" href="#">Theme</a>
                       </li>
                     {% if request.user.is_authenticated %}
                       <li class="nav-item">

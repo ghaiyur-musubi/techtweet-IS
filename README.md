@@ -2,6 +2,7 @@
 
 ### Introduction 
 
+Welcome to a Django powered twitter clone, it is built with HTML, Django backed python
 
 
 Reference Resources : 

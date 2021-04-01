@@ -8,7 +8,7 @@
         <hr>
 
         <p>
-            <strong><a href="/{{ user.username }}/following" class="nav-link">Following  </a></strong>{{ user.users.follows.count }} - <strong><a href="/{{ user.username }}/followers" class="nav-link">Followers  </a></strong>{{ user.users.followed_by.count }}
+            <strong><a  class="nav-link"  href="/{{ user.username }}/following">Following  </a></strong>{{ user.users.follows.count }} - <strong><a class="nav-link" href="/{{ user.username }}/followers">Followers  </a></strong>{{ user.users.followed_by.count }}
         </p>
 
         {% ifnotequal request.user user %}

@@ -67,6 +67,7 @@ Reference Resources :
     - [Likes based system](https://www.youtube.com/watch?v=GMbVzl_aLxM&ab_channel=PrettyPrinted) 
     - [Likes counter](https://www.youtube.com/watch?v=xqFM6ykQEwo&ab_channel=Pyplane)
     - [Proc Migrate](https://stackoverflow.com/questions/36410107/running-manage-py-migrate-during-heroku-deployment)
+    - [Django for loop slice](https://stackoverflow.com/questions/962708/how-much-flexibility-is-there-in-a-django-for-loop)
 
 - HTML 
 

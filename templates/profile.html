@@ -74,7 +74,7 @@
             {% load cloudinary %}
             {% cloudinary_includes %}
             {% cloudinary_js_config %}
-            {% for field in form|slice:":1" %}
+            {% for field in form%}
                 <div class="form-group">
                     {{ field }}
                 </div>

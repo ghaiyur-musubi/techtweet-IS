@@ -18,4 +18,4 @@ class TweetForm(forms.ModelForm):
     class Meta:
         model = Tweet     #Sending Details to body and image 
         exclude = ('user', )
-        fields= '__all__'
+        fields= ['body','image']

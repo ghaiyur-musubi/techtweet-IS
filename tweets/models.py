@@ -17,6 +17,7 @@ class Tweet(models.Model):
                              on_delete=models.DO_NOTHING)
     body = models.CharField(max_length=255)
     image = CloudinaryField('Image attached to the tweet', blank=True, null=True)
+    like_count = models.PositiveIntegerField('Like Count', default=0, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     # Desc Sort the tweets
     class Meta:

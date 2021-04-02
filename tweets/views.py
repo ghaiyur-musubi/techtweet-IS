@@ -35,18 +35,46 @@ def TweetDelete(request, tweet_id):
 
     return HttpResponseRedirect('/'+request.user.username+'/')
 
+# @login_required
+# def like(request, username):
+#     user = User.objects.get(username=username)
+#     request.user.users.follows.add(user.users)
+
+#     return redirect('/' + user.username + '/')
+
+
+# @login_required
+# def unlike(request, username):
+#     user = User.objects.get(username=username)
+#     # watch out, this should be .remove() instead of .delete()
+#     request.user.users.follows.remove(user.users)
+
+#     return redirect('/' + user.username + '/')
+
 @login_required
-def like(request, username):
-    user = User.objects.get(username=username)
-    request.user.users.follows.add(user.users)
+def tweetLikeAdd(request, tweet_id):
+  # Get requested tweet
+  tweet = Tweet.objects.get(id = tweet_id)
 
-    return redirect('/' + user.username + '/')
+  # Add count
+  new_like_count = tweet.like_count + 1
+  tweet.like_count = new_like_count
 
+  # Save
+  tweet.save()
+
+  return JsonResponse({'result': 'successful'})
 
 @login_required
-def unlike(request, username):
-    user = User.objects.get(username=username)
-    # watch out, this should be .remove() instead of .delete()
-    request.user.users.follows.remove(user.users)
+def tweetLikeSubtract(request, tweet_id):
+  # Get requested tweet
+  tweet = Tweet.objects.get(id = tweet_id)
 
-    return redirect('/' + user.username + '/')
+  # Subtract count
+  new_like_count = tweet.like_count - 1
+  tweet.like_count = new_like_count
+
+  # Save
+  tweet.save()
+
+  return JsonResponse({'result': 'successful'})

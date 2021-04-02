@@ -22,6 +22,14 @@
                             <img class="get-image" style="height: 100%; width: 100%;" src="{{ tweet.image.url }}">
                         {% endif %}
                     </p>
+                    <div class="icon-list">
+                        <div class="like js-like" data-tweet-id="{{ tweet.id }}">
+                            <img src="https://user-images.githubusercontent.com/67789350/113393810-d90f7f80-93b4-11eb-9ac4-9b6c037fadf5.png">
+                        </div>
+                        <div class="like-count js-like-count">
+                            {{ tweet.like_count }}
+                        </div>
+                    </div>
                 </div>
             </div>
         {% endfor %}

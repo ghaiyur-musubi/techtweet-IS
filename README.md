@@ -68,6 +68,7 @@ Reference Resources :
     - [Likes counter](https://www.youtube.com/watch?v=xqFM6ykQEwo&ab_channel=Pyplane)
     - [Proc Migrate](https://stackoverflow.com/questions/36410107/running-manage-py-migrate-during-heroku-deployment)
     - [Django for loop slice](https://stackoverflow.com/questions/962708/how-much-flexibility-is-there-in-a-django-for-loop)
+    - [Django like increment](https://stackoverflow.com/questions/43587124/django-like-count-is-not-incrementing)
 
 - HTML 
 

@@ -52,7 +52,7 @@ def TweetDelete(request, tweet_id):
 #     return redirect('/' + user.username + '/')
 
 @login_required
-def tweetLikeAdd(request, tweet_id):
+def TweetLikeAdd(request, tweet_id):
   # Get requested tweet
   tweet = Tweet.objects.get(id = tweet_id)
 
@@ -66,7 +66,7 @@ def tweetLikeAdd(request, tweet_id):
   return JsonResponse({'result': 'successful'})
 
 @login_required
-def tweetLikeSubtract(request, tweet_id):
+def TweetLikeSubtract(request, tweet_id):
   # Get requested tweet
   tweet = Tweet.objects.get(id = tweet_id)
 

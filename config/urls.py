@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from tweets.views import feed , TweetDelete, tweetLikeAdd, tweetLikeSubtract
+from tweets.views import feed , TweetDelete, TweetLikeAdd, TweetLikeSubtract
 from users.views import frontpage, signout, profile
 from users.views import following, followers, follow, stopfollow
 
@@ -13,8 +13,8 @@ urlpatterns = [
     path('signout/', signout, name='signout'),
     ### Tweet Activities
     path('TweetDelete/<int:tweet_id>/', TweetDelete),
-    path('tweetLikeAdd/<int:tweet_id>/', tweetLikeAdd),
-    path('tweetLikeSubtract/<int:tweet_id>/', tweetLikeSubtract),
+    path('TweetLikeAdd/<int:tweet_id>/', TweetLikeAdd),
+    path('TweetLikeSubtract/<int:tweet_id>/', TweetLikeSubtract),
     ### User Activities
     path('<str:username>/', profile, name='profile'),
     path('<str:username>/following', following, name='following'),

@@ -25,3 +25,7 @@ class Tweet(models.Model):
 
     def __str__(self):
         return "{0} at {1}: {2}...".format(self.user,self.created_at,self.body[:20])
+
+class Like(models.Model):
+	user = models.ForeignKey(User, related_name='likes', on_delete=models.CASCADE)
+	post = models.ForeignKey(Post, related_name='likes', on_delete=models.CASCADE)

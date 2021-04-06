@@ -63,7 +63,7 @@ def TweetLikeAdd(request, tweet_id):
   # Save
   tweet.save()
 
-  return None
+  return redirect('/feed')
 
 @login_required
 def TweetLikeSubtract(request, tweet_id):
@@ -77,4 +77,4 @@ def TweetLikeSubtract(request, tweet_id):
   # Save
   tweet.save()
 
-  return None
+  return redirect('/feed')

@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from tweets.views import feed , TweetDelete
+from tweets.views import feed , TweetDelete, tweetLikeAdd, tweetLikeSubtract
 from users.views import frontpage, signout, profile
-from users.views import following, followers, follow, stopfollow , tweetLikeAdd, tweetLikeSubtract
+from users.views import following, followers, follow, stopfollow
 
 
 urlpatterns = [

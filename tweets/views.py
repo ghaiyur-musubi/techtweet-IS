@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from .models import Tweet
+from .models import Tweet,Like
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
 from .forms import TweetForm
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
+import json
 
 
 
@@ -78,3 +79,23 @@ def TweetLikeSubtract(request, tweet_id):
   tweet.save()
 
   return redirect('/feed')
+
+################################################
+
+@login_required
+def like(request):
+	post_id = request.GET.get("likeId", "")
+	user = request.user
+	tweet = Tweet.objects.get(pk=tweet_id)
+	liked= False
+	like = Like.objects.filter(user=user, tweet=tweet)
+	if like:
+		like.delete()
+	else:
+		liked = True
+		Like.objects.create(user=user, tweet=tweet)
+	resp = {
+        'liked':liked
+    }
+	response = json.dumps(resp)
+	return HttpResponse(response, content_type = "application/json")

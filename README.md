@@ -69,6 +69,7 @@ Reference Resources :
     - [Proc Migrate](https://stackoverflow.com/questions/36410107/running-manage-py-migrate-during-heroku-deployment)
     - [Django for loop slice](https://stackoverflow.com/questions/962708/how-much-flexibility-is-there-in-a-django-for-loop)
     - [Django like increment](https://stackoverflow.com/questions/43587124/django-like-count-is-not-incrementing)
+    - [Social media like](https://towardsdatascience.com/build-a-social-media-website-with-django-feed-app-backend-part-4-d82facfa7b3)
 
 - HTML 
 

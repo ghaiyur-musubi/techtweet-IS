@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import Tweet
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
@@ -63,7 +63,7 @@ def TweetLikeAdd(request, tweet_id):
   # Save
   tweet.save()
 
-  return JsonResponse({'result': 'successful'})
+  return redirect('/feed')
 
 @login_required
 def TweetLikeSubtract(request, tweet_id):
@@ -77,4 +77,4 @@ def TweetLikeSubtract(request, tweet_id):
   # Save
   tweet.save()
 
-  return JsonResponse({'result': 'successful'})
+  return redirect('/feed')

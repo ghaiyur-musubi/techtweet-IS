@@ -86,7 +86,7 @@ def TweetLikeSubtract(request, tweet_id):
 def like(request):
 	post_id = request.GET.get("likeId", "")
 	user = request.user
-	tweet = Tweet.objects.get(pk=tweet_id)
+	tweet = Tweet.objects.get(id = tweet_id)
 	liked= False
 	like = Like.objects.filter(user=user, tweet=tweet)
 	if like:

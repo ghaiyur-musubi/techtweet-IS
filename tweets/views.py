@@ -83,7 +83,7 @@ def TweetLikeSubtract(request, tweet_id):
 ################################################
 
 @login_required
-def like(request):
+def like(request,tweet_id):
 	post_id = request.GET.get("likeId", "")
 	user = request.user
 	tweet = Tweet.objects.get(id = tweet_id)

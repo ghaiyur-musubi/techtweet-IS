@@ -1,4 +1,4 @@
-## Twitter ![visitors](https://visitor-badge.laobi.icu/badge?page_id=ghaiyur-musubi.techtweet-IS)
+## Twitter ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ghaiyur-musubi.techtweet-IS)
 
 ### Introduction 🐦
 

@@ -39,7 +39,7 @@ Repo info        |  Languages
 :-------------------------:|:-------------------------:
 <img style="float=left;" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />  |  <img style="float=right;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi" />
 
-<iframe width="600" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?ghaiyur-musubi" frameborder="0"></iframe>
+<img width="600" height="600" src="https://ionicabizau.github.io/github-profile-languages/api.html?ghaiyur-musubi" frameborder="0">
 
 ---
 

@@ -37,7 +37,7 @@ Users can see other users tweets in their feed
 
 Repo info        |  Languages
 :-------------------------:|:-------------------------:
-<img style="float=left;" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />  |  <img style="float=right;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi" />
+<img style="float=left;" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />  |  <img style="float=right;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi&layout=compact" />
 
 ---
 

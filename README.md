@@ -1,4 +1,4 @@
-## Twitter
+## Twitter ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ghaiyur-musubi.techtweet-IS)
 
 ### Introduction 🐦
 
@@ -33,8 +33,16 @@ Users can see other users tweets in their feed
 - comment out the heroku env files 
 - `python3 manage.py runserver`
 
+---
 
-Reference Resources : 
+Repo info        |  Languages
+:-------------------------:|:-------------------------:
+<img style="float=left;" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />  |  <img style="float=right;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi" />
+
+---
+
+
+### Reference Resources : 
 
 - Django
     - [Login and Signup](https://www.ordinarycoders.com/blog/article/django-user-register-login-logout)

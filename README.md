@@ -33,6 +33,10 @@ Users can see other users tweets in their feed
 - comment out the heroku env files 
 - `python3 manage.py runserver`
 
+---
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS)]
+
 
 Reference Resources : 
 

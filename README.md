@@ -35,8 +35,9 @@ Users can see other users tweets in their feed
 
 ---
 
-<img style="float=left;" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />
-<img style="float=right;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi" />
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img style="float=left;" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />  |  <img style="float=right;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi" />
 
 ---
 

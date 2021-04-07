@@ -35,10 +35,10 @@ Users can see other users tweets in their feed
 
 ---
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS)
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi" />
 
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi)
+---
 
 
 ### Reference Resources : 

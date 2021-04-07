@@ -35,7 +35,7 @@ Users can see other users tweets in their feed
 
 ---
 
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />
+<img float="left" src="https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS" />
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghaiyur-musubi" />
 
 ---

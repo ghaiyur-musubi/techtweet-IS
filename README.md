@@ -35,7 +35,7 @@ Users can see other users tweets in their feed
 
 ---
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS)]
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ghaiyur-musubi&repo=techtweet-IS)
 
 
 Reference Resources : 

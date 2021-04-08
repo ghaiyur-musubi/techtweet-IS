@@ -36,7 +36,7 @@
                             - {{ tweet.body }}
                             {% if tweet.image is not Null %}
                             - <a href="{{ tweet.image.url }}" target="_blank">   <!---Add Image present checker -->
-                                <img class="get-image" style="height: 100%; width: 100%;" src="{{ tweet.image.url }}">
+                                <img class="get-image" style="height: auto; width: auto;" src="{{ tweet.image.url }}">
                             {% endif %}
                             </a>
                         </p>

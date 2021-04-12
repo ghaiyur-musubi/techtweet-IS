@@ -24,6 +24,17 @@
         col.style.backgroundColor = colors[colorIndex];
         colorIndex++;
     }
+    function tick() {
+  const element = (
+    <div>
+      <h2>{new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  // highlight-next-line
+  ReactDOM.render(element, document.getElementById('time'));
+}
+
+setInterval(tick, 1000);
   </script>
     <!-- <h1>Welcome to <span style="color:rgb(4, 223, 252);">TECHTWEETIS</span></h1> -->
     <!-- NAVBAR -->
@@ -45,6 +56,9 @@
                   <!-- ms-auto, for pushing items to the left -->
                   <!-- mb-2, for a margin bottom for 2 levels -->
                   <ul class="navbar-nav ms-auto mb-2">
+                    <li class="nav-item">
+                      <div id="time" class="nav-link"></div>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link" onclick="changeColor()" href="#">Boogie</a>
                       </li>

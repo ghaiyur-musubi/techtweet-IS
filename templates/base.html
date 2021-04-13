@@ -28,13 +28,12 @@
   <script>
 // Unix time value from server: seconds since 1970-01-01T00:00:00Z
 // Below is a number for 2014-07-02T06:48:24.000Z, set to actual server value
-var serverTime = 1404283704;
 
 var doClock = (function () {
 
   // Calc offset from server time
   // Javascript time value is milliseconds since above epoch
-  var serverOffset = serverTime - (new Date() / 1000 | 0);
+  var serverOffset = (new Date() / 1000 | 0);
 
   // Helper
   function z(n){return (n<10?'0':'') + n}
@@ -46,7 +45,7 @@ var doClock = (function () {
     var now = new Date();
 
     // Adjust for server offset
-    now.setSeconds(now.getSeconds() + serverOffset);
+    now.setSeconds(now.getSeconds());
 
     // write clock to document, values are local, not UTC
     document.getElementById('clock').innerHTML = now.getFullYear()   + '-' +

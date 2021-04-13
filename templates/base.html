@@ -48,8 +48,8 @@ var doClock = (function () {
     now.setSeconds(now.getSeconds());
 
     // write clock to document, values are local, not UTC
-    document.getElementById('clock').innerHTML = now.getFullYear()   + '-' +
-                                                 z(now.getMonth()+1) + '-' +
+    document.getElementById('clock').innerHTML = now.getFullYear()   + '/' +
+                                                 z(now.getMonth()+1) + '/' +
                                                  z(now.getDate())    + ' ' +
                                                  z(now.getHours())   + ':' +
                                                  z(now.getMinutes()) + ':' +

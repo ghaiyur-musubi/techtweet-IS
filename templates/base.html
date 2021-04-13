@@ -26,14 +26,41 @@
     }
   </script>
   <script>
-    const timeEL = document.getElementById('clock_time');
+// Unix time value from server: seconds since 1970-01-01T00:00:00Z
+// Below is a number for 2014-07-02T06:48:24.000Z, set to actual server value
+var serverTime = 1404283704;
 
-    setInterval(setTime, 1000);
+var doClock = (function () {
 
-    function setTime() {
-      let date = new Date();
-      timeEL.innerText = `${date.getHours()}:${('0' + date.getMinutes()).slice(-2)}:${('0' + date.getSeconds()).slice(-2)}`;
-}
+  // Calc offset from server time
+  // Javascript time value is milliseconds since above epoch
+  var serverOffset = serverTime - (new Date() / 1000 | 0);
+
+  // Helper
+  function z(n){return (n<10?'0':'') + n}
+
+  return function() {
+
+    // Create a new Date object each time so
+    // it doesn't matter if a second or more is skipped
+    var now = new Date();
+
+    // Adjust for server offset
+    now.setSeconds(now.getSeconds() + serverOffset);
+
+    // write clock to document, values are local, not UTC
+    document.getElementById('clock').innerHTML = now.getFullYear()   + '-' +
+                                                 z(now.getMonth()+1) + '-' +
+                                                 z(now.getDate())    + ' ' +
+                                                 z(now.getHours())   + ':' +
+                                                 z(now.getMinutes()) + ':' +
+                                                 z(now.getSeconds());
+    // Run again just after next full second
+    setTimeout(doClock, 1020 - now.getMilliseconds());
+  };    
+}());
+
+window.onload = doClock;
     </script>
     <!-- <h1>Welcome to <span style="color:rgb(4, 223, 252);">TECHTWEETIS</span></h1> -->
     <!-- NAVBAR -->
@@ -56,7 +83,7 @@
                   <!-- mb-2, for a margin bottom for 2 levels -->
                   <ul class="navbar-nav ms-auto mb-2">
                     <li class="nav-item">
-                      <a class="nav-link" id="clock_time"></a>
+                      <a class="nav-link" id="clock"></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" onclick="changeColor()" href="#">Boogie</a>

@@ -61,9 +61,9 @@ var doClock = (function () {
     month[12] = "December";
 
     // write clock to document, values are local, not UTC
-    document.getElementById('clock').innerHTML = now.getFullYear()   + '/' +
+    document.getElementById('clock').innerHTML = now.getDate()   + '/' +
                                                  z(month[now.getMonth()+1]) + '/' +
-                                                 z(now.getDate())    + ' ' +
+                                                 z(now.getFullYear())    + ' ' +
                                                  z(now.getHours())   + ':' +
                                                  z(now.getMinutes()) + ':' +
                                                  z(now.getSeconds());

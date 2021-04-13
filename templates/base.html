@@ -26,17 +26,14 @@
     }
   </script>
   <script>
-    function tick() {
-  const element = (
-    <div>
-      <h2>{new Date().toLocaleTimeString()}</h2>
-    </div>
-  );
-  // highlight-next-line
-  ReactDOM.render(element, document.getElementById('clock_time'));
-}
+    const timeEL = document.getElementById('clock_time');
 
-setInterval(tick, 1000);
+setInterval(setTime, 1000);
+
+function setTime() {
+  let date = new Date();
+  timeEL.innerText = `${date.getHours()}:${('0' + date.getMinutes()).slice(-2)}:${('0' + date.getSeconds()).slice(-2)}`;
+}
     </script>
     <!-- <h1>Welcome to <span style="color:rgb(4, 223, 252);">TECHTWEETIS</span></h1> -->
     <!-- NAVBAR -->

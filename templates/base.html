@@ -61,9 +61,9 @@ var doClock = (function () {
     month[12] = "December";
 
     // write clock to document, values are local, not UTC
-    document.getElementById('clock').innerHTML = now.getDate()  + '/' +
+    document.getElementById('clock').innerHTML = now.getFullYear()   + '/' +
                                                  z(month[now.getMonth()+1]) + '/' +
-                                                 z(now.getFullYear()    + ' ' +
+                                                 z(now.getDate())    + ' ' +
                                                  z(now.getHours())   + ':' +
                                                  z(now.getMinutes()) + ':' +
                                                  z(now.getSeconds());
@@ -77,7 +77,7 @@ window.onload = doClock;
     <!-- <h1>Welcome to <span style="color:rgb(4, 223, 252);">TECHTWEETIS</span></h1> -->
     <!-- NAVBAR -->
         <!-- NAVBAR START -->
-        <nav style="position: fixed; top: 0; width: 100%;" class="navbar navbar-expand-md navbar-light shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
           <!-- container, ajust the width for each device. -->
           <div class="container">
               <!-- navbar-brand, for your company, product, or project name. -->

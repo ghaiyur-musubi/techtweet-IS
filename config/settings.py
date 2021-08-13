@@ -150,7 +150,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # Cloudinary Credentials 
 
 cloudinary.config( 
-  cloud_name = ${{ secrets.CLOUD_NAME }}, 
-  api_key = ${{ secrets.CLOUD_API_KEY }}, 
-  api_secret = ${{ secrets.CLOUD_API_SECRET }},
+  cloud_name = {{ secrets.CLOUD_NAME }}, 
+  api_key = {{ secrets.CLOUD_API_KEY }}, 
+  api_secret = {{ secrets.CLOUD_API_SECRET }},
 )
